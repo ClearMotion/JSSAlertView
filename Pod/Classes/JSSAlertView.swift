@@ -88,6 +88,10 @@ open class JSSAlertView: UIViewController {
 		open func setTextTheme(_ theme: TextColorTheme) {
 			self.alertview.setTextTheme(theme)
 		}
+        
+        open func closeView() {
+            self.alertview.closeView(false)
+        }
 
 		@objc func close() {
 			self.alertview.closeView(false)
